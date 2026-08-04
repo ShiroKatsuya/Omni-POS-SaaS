@@ -11,6 +11,16 @@
 
 ---
 
+## 📷 Screenshots
+
+| **POS Checkout Terminal** | **Analytics & Sales Dashboard** |
+| :---: | :---: |
+| ![POS Checkout Terminal](public/screenshots/pos-terminal.png) | ![Analytics & Sales Dashboard](public/screenshots/dashboard.png) |
+| **Product & Catalog Management** | **Transaction History & Receipts** |
+| ![Product & Catalog Management](public/screenshots/products.png) | ![Transaction History & Receipts](public/screenshots/transactions.png) |
+
+---
+
 ## 🌟 Key Features
 
 ### 🛒 Point of Sale (POS) Terminal
