@@ -48,31 +48,31 @@
 
 ```mermaid
 graph TD
-    subgraph Client Layer
-        A[Next.js 16 Web App / Cashier Terminal]
-        B[Super Admin & Owner Dashboard]
+    subgraph CL["Client Layer"]
+        A["Next.js 16 Web App / Cashier Terminal"]
+        B["Super Admin & Owner Dashboard"]
     end
 
-    subgraph API & Backend Services NestJS 11
-        C[Auth Module JWT / Passport]
-        D[POS & Transaction Engine]
-        E[Inventory & PO Service]
-        F[Accounting & Ledger Service]
-        G[WhatsApp Baileys Gateway]
+    subgraph API["API & Backend Services NestJS 11"]
+        C["Auth Module JWT / Passport"]
+        D["POS & Transaction Engine"]
+        E["Inventory & PO Service"]
+        F["Accounting & Ledger Service"]
+        G["WhatsApp Baileys Gateway"]
     end
 
-    subgraph Storage & Messaging
-        H[(PostgreSQL Database)]
-        I[(Redis Cache)]
-        J[WhatsApp Web API]
+    subgraph SM["Storage & Messaging"]
+        H[("PostgreSQL Database")]
+        I[("Redis Cache")]
+        J["WhatsApp Web API"]
     end
 
-    Client Layer -->|REST API / WebSockets| C
-    Client Layer -->|REST API| D
-    Client Layer -->|REST API| E
-    Client Layer -->|REST API| F
-    API & Backend Services NestJS 11 -->|Prisma ORM| H
-    API & Backend Services NestJS 11 -->|Pub/Sub & Cache| I
+    CL -->|REST API / WebSockets| C
+    CL -->|REST API| D
+    CL -->|REST API| E
+    CL -->|REST API| F
+    API -->|Prisma ORM| H
+    API -->|Pub/Sub & Cache| I
     G -->|Direct Connection| J
 ```
 
